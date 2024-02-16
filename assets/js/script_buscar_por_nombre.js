@@ -5,7 +5,11 @@ $(function () {
   $(".button_buscar_id").on("click", function () {
     const valor_input = $("#input_nombre_superhero").val();
     if (valor_input.length == 0) {
-      alert("Debes Ingresar algún nombre");
+      Swal.fire({
+        icon: "warning",
+        title: "ADVERTENCIA",
+        text: "Debes Ingresar algún nombre",
+      });
     } else {
       $.ajax({
         type: "GET",

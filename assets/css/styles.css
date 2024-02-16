@@ -161,6 +161,7 @@ Estilos Swal
 
 .swal2-confirm.swal2-styled {
   background-color: red;
+  font-family: var(--font-elementos);
 }
 .swal2-title {
   font-family: var(--font-elementos);
