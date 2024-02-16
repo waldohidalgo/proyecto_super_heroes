@@ -11,12 +11,14 @@ h3 {
   margin: auto;
   padding-block: 1rem;
 }
-.buscar_superhero_wrapper_input_group {
+.buscar_superhero_wrapper_input_group,
+.wrapper_buscar_id_input_group {
   width: 80%;
   max-width: 400px;
   margin: auto;
 }
-.nombre_label_input {
+.nombre_label_input,
+#input_group_buscar_id {
   color: white;
   font-family: var(--font-elementos);
   cursor: pointer;
@@ -32,7 +34,8 @@ h3 {
   font-weight: 700;
 }
 
-.button_buscar_id {
+.button_buscar_id,
+.button_buscar_por_id {
   display: block;
   margin: auto;
   font-family: var(--font-elementos);
@@ -51,4 +54,13 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 5px;
+}
+.mensaje_input_buscar_id {
+  color: red;
+  font-weight: 700;
+  font-family: var(--font-elementos);
+  visibility: hidden;
+}
+.mensaje_input_buscar_id-invalido {
+  visibility: visible;
 }

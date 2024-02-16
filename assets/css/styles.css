@@ -4,6 +4,9 @@
   --font-descripcion: "Average", serif;
   --font-elementos: "Kanit", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /*
 Estilos Header
@@ -68,8 +71,25 @@ header {
 .header_descripcion span {
   font-weight: 700;
 }
+.contenedor_image {
+  border: 1px solid black;
+}
+.contenedor_image_a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contenedor_image_a a {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 800px) {
+    width: 70%;
+  }
+}
 .contenedor_image img {
   width: 100%;
+  object-fit: contain;
 }
 
 .swiper_button_navigation {
@@ -120,4 +140,14 @@ header {
   @media screen and (min-width: 480px) {
     font-size: 1.5rem;
   }
+}
+.contenedor_carrusel {
+  padding-inline: 0;
+
+  @media screen and (min-width: 480px) {
+    padding-inline: 1rem;
+  }
+}
+.carrusel_header {
+  height: 75vh;
 }

@@ -93,3 +93,22 @@ Estilos Inside Menu Lateral
   font-family: var(--font-titulos);
   font-weight: 700;
 }
+
+.offcanvas-body {
+  text-align: center;
+  font-family: var(--font-titulos);
+  font-weight: 700;
+}
+.offcanvas-body li {
+  padding-block: 1rem;
+  cursor: pointer;
+  color: black;
+}
+.offcanvas-body a {
+  text-decoration: none;
+  color: inherit;
+}
+.offcanvas-body li:hover {
+  background-color: black;
+  color: white;
+}

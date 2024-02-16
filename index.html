@@ -33,6 +33,11 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/styles_seccion_buscar.css" />
     <link
+      rel="stylesheet"
+      href="./assets/css/styles_seccion_show_superhero.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles_footer.css" />
+    <link
       rel="shortcut icon"
       href="./assets/img/shield.ico"
       type="image/x-icon"
@@ -59,7 +64,11 @@
         </h5>
       </div>
       <div class="offcanvas-body">
-        <p>Try scrolling the rest of the page to see this option in action.</p>
+        <ul>
+          <li><a href="#seccion_inicio">Inicio</a></li>
+          <li><a href="#seccion_buscar">Buscar</a></li>
+          <li><a href="#seccion_datos">Datos</a></li>
+        </ul>
       </div>
     </div>
     <div
@@ -75,7 +84,7 @@
       </div>
     </div>
 
-    <header>
+    <header id="seccion_inicio">
       <h1 class="header_titulo">
         Encuentra tu SuperHero
         <div class="separador_uno"></div>
@@ -95,49 +104,57 @@
         Desarrollo de aplicaciones <span>Full Stack Javascript Trainee</span> el
         cual corresponde a la prueba para aprobar dicho módulo
       </h2>
-      <div class="swiper carrusel_header">
-        <div class="header_contenedor_imagenes swiper-wrapper">
-          <div class="contenedor_image swiper-slide">
-            <h3 class="contenedor_image_titulo">Página 1 de Requisitos</h3>
-            <a
-              href="./assets/img/requisitos_uno.webp"
-              data-lightbox="roadtrip"
-              data-title="Imagen Requisitos Página 1"
-              ><img
-                src="./assets/img/requisitos_uno.webp"
-                alt="Imagen Requisitos Pagina 1"
-            /></a>
+      <div class="contenedor_carrusel">
+        <div class="swiper carrusel_header">
+          <div class="header_contenedor_imagenes swiper-wrapper">
+            <div class="contenedor_image swiper-slide">
+              <h3 class="contenedor_image_titulo">Página 1 de Requisitos</h3>
+              <div class="contenedor_image_a">
+                <a
+                  href="./assets/img/requisitos_uno.webp"
+                  data-lightbox="roadtrip"
+                  data-title="Imagen Requisitos Página 1"
+                  ><img
+                    src="./assets/img/requisitos_uno.webp"
+                    alt="Imagen Requisitos Pagina 1"
+                /></a>
+              </div>
+            </div>
+            <div class="contenedor_image swiper-slide">
+              <h3 class="contenedor_image_titulo">Página 2 de Requisitos</h3>
+              <div class="contenedor_image_a">
+                <a
+                  href="./assets/img/requisitos_dos.webp"
+                  data-lightbox="roadtrip"
+                  data-title="Imagen Requisitos Página 2"
+                  ><img
+                    src="./assets/img/requisitos_dos.webp"
+                    alt="Imagen Requisitos Pagina 2"
+                /></a>
+              </div>
+            </div>
+            <div class="contenedor_image swiper-slide">
+              <h3 class="contenedor_image_titulo">Página 3 de Requisitos</h3>
+              <div class="contenedor_image_a">
+                <a
+                  href="./assets/img/requisitos_tres.webp"
+                  data-lightbox="roadtrip"
+                  data-title="Imagen Requisitos Página 3"
+                  ><img
+                    src="./assets/img/requisitos_tres.webp"
+                    alt="Imagen Requisitos Pagina 3"
+                /></a>
+              </div>
+            </div>
           </div>
-          <div class="contenedor_image swiper-slide">
-            <h3 class="contenedor_image_titulo">Página 2 de Requisitos</h3>
-            <a
-              href="./assets/img/requisitos_dos.webp"
-              data-lightbox="roadtrip"
-              data-title="Imagen Requisitos Página 2"
-              ><img
-                src="./assets/img/requisitos_dos.webp"
-                alt="Imagen Requisitos Pagina 2"
-            /></a>
-          </div>
-          <div class="contenedor_image swiper-slide">
-            <h3 class="contenedor_image_titulo">Página 3 de Requisitos</h3>
-            <a
-              href="./assets/img/requisitos_tres.webp"
-              data-lightbox="roadtrip"
-              data-title="Imagen Requisitos Página 3"
-              ><img
-                src="./assets/img/requisitos_tres.webp"
-                alt="Imagen Requisitos Pagina 3"
-            /></a>
-          </div>
+          <div class="swiper-button-next swiper_button_navigation"></div>
+          <div class="swiper-button-prev swiper_button_navigation"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next swiper_button_navigation"></div>
-        <div class="swiper-button-prev swiper_button_navigation"></div>
-        <div class="swiper-pagination"></div>
       </div>
     </header>
     <main>
-      <section class="buscar_superhero">
+      <section class="buscar_superhero" id="seccion_buscar">
         <article>
           <h3>
             Ingresa nombre de Super Heroe a Buscar
@@ -176,9 +193,167 @@
             </ul>
           </div>
         </article>
+        <article class="buscar_superhero_id">
+          <h3>
+            Ingresa ID de Super Heroe a Buscar
+            <div class="separador_uno"></div>
+          </h3>
+          <form class="row mt-3 needs-validation mx-0" novalidate>
+            <div class="wrapper_buscar_id_input_group">
+              <div class="input-group">
+                <label
+                  class="input-group-text bg-success form-label mb-0"
+                  id="input_group_buscar_id"
+                  for="buscar_id_input"
+                  >ID</label
+                >
+                <input
+                  type="text"
+                  id="buscar_id_input"
+                  class="form-control"
+                  placeholder="Ingresa ID"
+                  aria-label="Ingresa ID"
+                  aria-describedby="input_group_buscar_id"
+                  required
+                />
+              </div>
+              <p class="mensaje_input_buscar_id mb-3">
+                El Input No Puede estar Vacio
+              </p>
+              <button
+                class="button_buscar_por_id btn btn-primary mb-3"
+                type="submit"
+                title="Haz click aquí para buscar "
+              >
+                Buscar
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
+      <section class="show_superhero" id="seccion_datos">
+        <h3>
+          Datos del SuperHero
+          <div class="separador_uno"></div>
+        </h3>
+        <div class="show_superhero_contenedor_datos">
+          <div class="row mx-0 gy-3">
+            <div class="col col-12 col-lg-6">
+              <div class="contenedor_elemento">
+                <h3 class="pt-0">SuperHeroe Encontrado</h3>
+                <div class="contenedor_image_card">
+                  <img
+                    class="contenedor_image_card--img"
+                    src=""
+                    alt="Imagen Super Heroe"
+                  />
+                  <div class="card contenedor_image_card--card">
+                    <div class="card-body">
+                      <ul class="card-text">
+                        <li>
+                          <span>Nombre:</span>
+                          <span class="contenedor_image_card--nombre"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Conexiones:</span>
+                          <span class="contenedor_image_card--conexiones"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Publicado por:</span>
+                          <span class="contenedor_image_card--publicado"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Ocupación:</span>
+                          <span class="contenedor_image_card--ocupacion"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Primera Aparición:</span>
+                          <span class="contenedor_image_card--aparicion"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Altura:</span>
+                          <span class="contenedor_image_card--altura"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Peso:</span>
+                          <span class="contenedor_image_card--peso"
+                            >placeholder</span
+                          >
+                        </li>
+                        <li>
+                          <span>Alianzas:</span>
+                          <span class="contenedor_image_card--alianzas"
+                            >placeholder</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-6">
+              <div class="contenedor_canvas" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="contenedor_logo">
+        <a href="#seccion_inicio"
+          ><img
+            src="./assets/img/sh2-sin_background.png"
+            alt="logo superheroes"
+        /></a>
+      </div>
+      <div class="contenedor_contenido">
+        <p class="contenedor_contenido_texto">
+          Página web desarrollada en un 100% por
+          <span class="contenedor_contenido_texto--destaque"
+            ><a
+              href="https://linktr.ee/waldohidalgo"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Ir a mi linktr.ee"
+              >Waldo Hidalgo Oyarce</a
+            ></span
+          >
+        </p>
+        <div class="contenedor_contenido_redes">
+          <a
+            href="https://github.com/waldohidalgo"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="./assets/img/github.png"
+              alt="logo github"
+              title="Ir a mi perfil de Github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/waldo-hidalgo-oyarce/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="./assets/img/linkedin.png"
+              alt="logo linkedin"
+              tille="Ir a mi perfil de LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -204,9 +379,12 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
 
     <script src="./assets/js/script_buscar_por_nombre.js"></script>
+    <script src="./assets/js/script_buscar_por_id.js"></script>
   </body>
 </html>
