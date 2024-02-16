@@ -4,7 +4,7 @@ Las tecnologías utilizadas son las siguientes:
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 
-Junto a estas otras librerías: SwiperJS, CanvasJS y Lightbox2. He ido mucho más allá de los requisitos del proyecto implementando las siguientes funcionalidades:
+Junto a estas otras librerías: SwiperJS, CanvasJS, Lightbox2 y SweetAlert2. He ido mucho más allá de los requisitos del proyecto implementando las siguientes funcionalidades:
 
 1-Menú Lateral izquierdo utilizando el componente offcanvas de Bootstrap 5 y realización de backdrop de manera manual
 
@@ -18,7 +18,9 @@ Junto a estas otras librerías: SwiperJS, CanvasJS y Lightbox2. He ido mucho má
 
 6-Validación de campos de formulario ingreso de ID utilizando las herramientas de validación de Bootstrap 5.
 
-7-Creación de Footer
+7-Implementación de alertas vía librería SweetAlert2
+
+8-Creación de Footer
 
 Los requisitos del proyecto son los siguientes:
 

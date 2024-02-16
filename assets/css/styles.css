@@ -151,3 +151,18 @@ header {
 .carrusel_header {
   height: 75vh;
 }
+/*
+Estilos Swal
+*/
+.swal2-html-container {
+  font-family: var(--font-elementos);
+  color: black;
+}
+
+.swal2-confirm.swal2-styled {
+  background-color: red;
+}
+.swal2-title {
+  font-family: var(--font-elementos);
+  font-weight: 700;
+}

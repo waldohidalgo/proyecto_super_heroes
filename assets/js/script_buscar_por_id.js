@@ -97,11 +97,19 @@ function consultarID(valorID) {
           $("#seccion_datos")[0].scrollIntoView({ behavior: "smooth" })
         );
       } else {
-        alert("SuperHeroe No Encontrado");
+        Swal.fire({
+          icon: "error",
+          title: "ERROR",
+          text: "Super Heroe No Encontrado",
+        });
       }
     },
     error: function (error) {
-      alert("Ha ocurrido un Error al consultar la URL");
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Ha ocurrido un Error al consultar la URL",
+      });
     },
   });
 }
