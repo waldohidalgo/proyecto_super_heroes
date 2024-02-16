@@ -28,6 +28,7 @@ header {
   margin-inline: auto;
   width: 30%;
   min-width: 100px;
+  max-width: 250px;
 }
 .header_logo img {
   width: 100%;

@@ -1,5 +1,3 @@
-$(function () {});
-
 /*
 Settings lightbox
 */
@@ -34,4 +32,17 @@ const swiper = new Swiper(".carrusel_header", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+/*
+Script Hamburguer
+*/
+$(function () {
+  $(".wrapper_menu_hamburguesa").click(function () {
+    $(".hamburger").toggleClass("is-active");
+    $(".backdrop_menu_lateral").toggleClass("is-active");
+  });
+  $(".backdrop_menu_lateral").click(function () {
+    $(".hamburger").trigger("click");
+  });
 });
