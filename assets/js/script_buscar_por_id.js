@@ -93,7 +93,9 @@ function consultarID(valorID) {
       if (response.response == "success") {
         seteoInfoSuperHeroe(response);
         crearCanvas(response);
-        $(".show_superhero").slideDown(1000);
+        $(".show_superhero").slideDown(1000, () =>
+          $("#seccion_datos")[0].scrollIntoView({ behavior: "smooth" })
+        );
       } else {
         alert("SuperHeroe No Encontrado");
       }
