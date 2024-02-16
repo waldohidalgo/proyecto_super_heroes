@@ -1,0 +1,122 @@
+:root {
+  --font-titulos: "Vollkorn SC", serif;
+  --bg-color: #fdf0ba;
+  --font-descripcion: "Average", serif;
+  --font-elementos: "Kanit", sans-serif;
+}
+
+/*
+Estilos Header
+*/
+header {
+  padding-block: 2rem;
+  background-color: var(--bg-color);
+}
+.header_titulo {
+  font-family: var(--font-titulos);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: fit-content;
+  margin: auto;
+  @media screen and (min-width: 576px) {
+    font-size: 3rem;
+  }
+}
+.header_logo {
+  margin-top: 1rem;
+  margin-inline: auto;
+  width: 30%;
+  min-width: 100px;
+}
+.header_logo img {
+  width: 100%;
+}
+.separador_uno {
+  margin-top: 3px;
+  width: 80%;
+  height: 5px;
+  margin-inline: auto;
+  background-color: red;
+  border-color: 1px solid black;
+  @media screen and (min-width: 650px) {
+    width: 100%;
+  }
+}
+.separador_dos {
+  margin-inline: auto;
+  margin-top: 3px;
+  width: 60%;
+  height: 5px;
+  background-color: green;
+  border-color: 1px solid black;
+  @media screen and (min-width: 650px) {
+    width: 80%;
+  }
+}
+.header_descripcion {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 1rem 2rem;
+  font-family: var(--font-descripcion);
+  line-height: 1.5rem;
+  @media screen and (min-width: 576px) {
+    padding-inline: 2rem;
+  }
+}
+.header_descripcion span {
+  font-weight: 700;
+}
+.contenedor_image img {
+  width: 100%;
+}
+
+.swiper_button_navigation {
+  z-index: 1;
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.swiper_button_navigation {
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+.swiper-button-prev {
+  background-image: url("../img/left-chevron.png") !important;
+}
+.swiper-button-next {
+  background-image: url("../img/right-chevron.png") !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: white;
+  border: 1px solid black;
+  transform: scale(2);
+}
+.contenedor_image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.contenedor_image_titulo {
+  position: absolute;
+  top: 5%;
+  font-size: 1.5rem;
+  margin-inline: 1rem;
+  font-weight: 700;
+  color: white;
+  font-family: var(--font-titulos);
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  @media screen and (min-width: 480px) {
+    font-size: 1.5rem;
+  }
+}

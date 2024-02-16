@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn+SC&family=Average&family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles_seccion_buscar.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/shield.ico"
+      type="image/x-icon"
+    />
+    <title>Encuentra tu SuperHero</title>
+  </head>
+  <body>
+    <nav class="menu"></nav>
+    <header>
+      <h1 class="header_titulo">
+        Encuentra tu SuperHero
+        <div class="separador_uno"></div>
+        <div class="separador_dos"></div>
+      </h1>
+      <div class="header_logo">
+        <a
+          href="./assets/img/sh1.jpg"
+          data-title="Logo SuperHero"
+          data-lightbox="Logo SuperHero"
+          ><img src="./assets/img/sh1.jpg" alt="Logo SuperHero"
+        /></a>
+      </div>
+      <h2 class="header_descripcion">
+        Proyecto final del módulo 3
+        <span>Fundamentos de programación en JavaScript</span> del bootcamp
+        Desarrollo de aplicaciones <span>Full Stack Javascript Trainee</span> el
+        cual corresponde a la prueba para aprobar dicho módulo
+      </h2>
+      <div class="swiper carrusel_header">
+        <div class="header_contenedor_imagenes swiper-wrapper">
+          <div class="contenedor_image swiper-slide">
+            <h3 class="contenedor_image_titulo">Página 1 de Requisitos</h3>
+            <a
+              href="./assets/img/requisitos_uno.webp"
+              data-lightbox="roadtrip"
+              data-title="Imagen Requisitos Página 1"
+              ><img
+                src="./assets/img/requisitos_uno.webp"
+                alt="Imagen Requisitos Pagina 1"
+            /></a>
+          </div>
+          <div class="contenedor_image swiper-slide">
+            <h3 class="contenedor_image_titulo">Página 2 de Requisitos</h3>
+            <a
+              href="./assets/img/requisitos_dos.webp"
+              data-lightbox="roadtrip"
+              data-title="Imagen Requisitos Página 2"
+              ><img
+                src="./assets/img/requisitos_dos.webp"
+                alt="Imagen Requisitos Pagina 2"
+            /></a>
+          </div>
+          <div class="contenedor_image swiper-slide">
+            <h3 class="contenedor_image_titulo">Página 3 de Requisitos</h3>
+            <a
+              href="./assets/img/requisitos_tres.webp"
+              data-lightbox="roadtrip"
+              data-title="Imagen Requisitos Página 3"
+              ><img
+                src="./assets/img/requisitos_tres.webp"
+                alt="Imagen Requisitos Pagina 3"
+            /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper_button_navigation"></div>
+        <div class="swiper-button-prev swiper_button_navigation"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+    <main>
+      <section class="buscar_superhero">
+        <article>
+          <h3>
+            Ingresa nombre de Super Heroe a Buscar
+            <div class="separador_uno"></div>
+          </h3>
+          <div class="buscar_superhero_wrapper_input_group">
+            <div class="input-group mb-3">
+              <label
+                class="input-group-text bg-success nombre_label_input"
+                id="nombre_superhero "
+                for="input_nombre_superhero"
+                title="Ingresa Nombre SuperHeroe"
+                >Nombre</label
+              >
+              <input
+                id="input_nombre_superhero"
+                type="text"
+                class="form-control"
+                placeholder="Nombre SuperHero"
+                aria-label="Nombre SuperHero"
+                aria-describedby="nombre_superhero"
+              />
+            </div>
+            <button
+              class="button_buscar_id btn btn-primary my-3"
+              type="button"
+              title="Haz click aquí para buscar Id"
+            >
+              Buscar ID
+            </button>
+          </div>
+          <div class="buscar_superhero_resultado">
+            <h3>El ID resultado es:</h3>
+            <ul class="id_resultado">
+              <li>ID</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+      integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script_buscar_por_nombre.js"></script>
+  </body>
+</html>
