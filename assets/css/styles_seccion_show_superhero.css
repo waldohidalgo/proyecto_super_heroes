@@ -42,6 +42,6 @@
   text-align: center;
 }
 .canvasjs-chart-canvas {
-  width: 100% !important;
+  max-width: 100% !important;
   height: 400px !important;
 }
