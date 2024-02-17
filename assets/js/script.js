@@ -15,7 +15,7 @@ const swiper = new Swiper(".carrusel_header", {
 
   spaceBetween: 0,
   breakpoints: {
-    480: {
+    725: {
       slidesPerView: 2,
       spaceBetween: 5,
     },

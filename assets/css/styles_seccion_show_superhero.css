@@ -14,13 +14,20 @@
     flex-direction: row;
   }
 }
-.contenedor_image_card img {
+
+.wrapper_image_show {
   width: 100%;
-  object-fit: contain;
-  max-height: 300px;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 580px) {
     width: 50%;
+    justify-content: flex-end;
   }
+}
+
+.contenedor_image_card--img {
+  max-width: 100%;
+  max-height: 300px;
 }
 
 .contenedor_image_card--card {
