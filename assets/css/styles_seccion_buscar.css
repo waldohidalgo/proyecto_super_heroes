@@ -49,10 +49,11 @@ h3 {
   overflow-y: auto;
   font-family: var(--font-titulos);
   font-weight: bold;
+  height: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   padding: 5px;
 }
 .mensaje_input_buscar_id {
