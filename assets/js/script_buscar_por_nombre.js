@@ -2,7 +2,8 @@ const url_search =
   "https://www.superheroapi.com/api.php/407786381624197/search/";
 
 $(function () {
-  $(".button_buscar_id").on("click", function () {
+  $(".buscar_superhero_wrapper_input_group").on("submit", function (evento) {
+    evento.preventDefault();
     const valor_input = $("#input_nombre_superhero").val();
     if (valor_input.length == 0) {
       Swal.fire({
